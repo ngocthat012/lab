@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ngocthat.ketquaxoso.SelectProvince">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="KẾT QUẢ XỔ SỐ KIẾN THIẾT MIỀN NAM" />
+    <View
+        android:layout_width="fill_parent"
+        android:id="@+id/View"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/text"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:text="Chọn tỉnh:"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="5dp"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/View"
+        android:layout_marginStart="17dp"
+        android:layout_alignStart="@+id/View" />
+
+    <Spinner
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/View"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_below="@+id/View"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:text="Ngày:" />
+
+    <Spinner
+        android:id="@+id/day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_below="@+id/city"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"/>
+</RelativeLayout>

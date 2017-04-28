@@ -47,7 +47,7 @@ public class ExchangeRate {
             if(response.isSuccessful()) {
                 String xml = response.body().string();
                 JSONObject result = XML.toJSONObject(xml);
-                //Log.d("Test",result.toString());
+                Log.d("Test",result.toString());
                 return result;
             }else {
                 Log.d("Test","Loi");
